@@ -1,28 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Blog</title>
+<?php require_once 'header.php' ?>
+  
+ <!-- Banner --> 
+<div class="row">
+	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
+		<div class="item active">
+			<img src="imagens/banner.png" class="img-responsive wp-post-image" alt="Banner">
+		</div>
+	</div>
+</div>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Bloco Navegação -->
+<div class="row navegacao">
+	<div class="bloco-sobre">
+		<div class="row linha-sobre">
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<img src="imagens/icons8-Weixing-128.png" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<h2>Conheça Mais Sobre Nós</h2>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+					<a href="" class="btn btn-purple">Acessar</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<img src="imagens/icons8-WordPress-128.png" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<h2>Olhe Nossos últimos Posts</h2>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+					<a href="" class="btn btn-purple">Acessar</a>
+				</div>
+			</div>
+		</div>
+		<div class="row linha-sobre">
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<img src="imagens/icons8-Google Photos-128.png
+					" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<h2>Veja Nossa Galeria</h2>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+					<a href="" class="btn btn-purple">Acessar</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">
+					<img src="imagens/icons8-Telefone-128.png" class="img-responsive">
+				</div>
+				<div class="col-md-6">
+					<h2>Entre em Contato</h2>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+					<a href="" class="btn btn-purple">Acessar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<!-- Ultimos Posts -->
+<div class="row ultimos-posts">
+	<div class="linha-posts">
+		<div class="col-md-3">
+			<div class="bloco-posts">
+				<img src="imagens/ultimos-posts.png" class="img-responsive">
+				<div class="texto">
+					<h4>Lorem Ipsum</h4>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+				</div>
+				<a href="">Leia Mais.</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="bloco-posts">
+				<img src="imagens/ultimos-posts.png" class="img-responsive">
+				<div class="texto">
+					<h4>Lorem Ipsum</h4>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+				</div>
+				<a href="">Leia Mais.</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="bloco-posts">
+				<img src="imagens/ultimos-posts.png" class="img-responsive">
+				<div class="texto">
+					<h4>Lorem Ipsum</h4>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+				</div>
+				<a href="">Leia Mais.</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="bloco-posts">
+				<img src="imagens/ultimos-posts.png" class="img-responsive">
+				<div class="texto">
+					<h4>Lorem Ipsum</h4>
+					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+				</div>
+				<a href="">Leia Mais.</a>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+<!-- Mensagem -->
+<div class="row mensagem">
+	<div class="texto">
+		<h2>Ninguém é igual a ninguém. Todo o ser humano é um estranho ímpar.</h2>
+		<p>Carlos Drummond de Andrade</p>
+	</div>
+</div>
+
+<?php require_once 'footer.php' ?>

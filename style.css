@@ -1,0 +1,139 @@
+
+.navbar{
+	border-radius: 0;
+	margin: 0;
+}
+.navbar-default{
+	border: none;
+}
+.navbar-default .container-fluid{
+	padding-right: 0;
+}
+#navbar ul li a,.navbar-default .navbar-header a{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#navbar ul li a:hover{
+	color:  #fff;
+}
+#navbar ul li:hover{
+	background-color: #8c3c71;
+}
+
+.navbar-default .navbar-header a:hover{
+	color: #8c3c71;
+}
+/* Home */
+.navegacao{
+	background-image: url('imagens/marquee-bg-ai-1440x1090.jpg');
+}
+
+.bloco-sobre {
+	width: 80%;
+    margin: 40px auto;
+    color: #fff;
+}
+
+.bloco-sobre .linha-sobre{
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bloco-sobre .linha-sobre h2,.bloco-sobre .linha-sobre a{
+	color: #0b96fb;
+	font-weight: bold;
+}
+
+.bloco-sobre .linha-sobre .btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.bloco-sobre .linha-sobre .btn{
+  font-family: arial;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.bloco-sobre .linha-sobre .btn-purple{
+  background:#0b4671;
+  color:#fff;
+  box-shadow:0 5px 0 #0a304c;
+}
+.bloco-sobre .linha-sobre .btn-purple:hover{
+  background:#206292;
+  box-shadow:0 5px 0 #085288;
+}
+
+.bloco-sobre .linha-sobre .btn-purple:active{
+	position:relative;
+  	top:5px;
+  	box-shadow:none;
+}
+
+.ultimos-posts{
+	margin-top: 100px;
+}
+.ultimos-posts .linha-posts{
+	margin: 0 auto;
+    width: 90%;
+}
+
+.ultimos-posts .linha-posts .bloco-posts{
+	padding: 0 10px;
+}
+
+.ultimos-posts .linha-posts .bloco-posts .texto h4{
+	font-weight: bold;
+}
+
+.ultimos-posts .linha-posts .bloco-posts a{
+	color: #632d9f;
+	text-decoration: none;
+}
+
+.mensagem{
+	margin-top: 95px;
+	background-image: url('imagens/2.jpg');
+    height: 806px
+}
+
+
+.mensagem .texto{
+	top: 200px;
+    color: #fff;
+    font-style: italic;
+    width: 60%;
+    margin: 300px auto;
+}
+.mensagem .texto h2{
+	font-weight: bold;
+}
+
+.footer{
+	background-color: #3b3b3c;
+    border-top: solid 1px #fff;
+    padding-bottom: 20px;
+   }
+.footer .rodape{
+	margin: 20px;
+}
+.footer ul li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.footer ul li{
+	padding: 4px;
+}   
+
+.direitos{
+	text-align: center;
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}
