@@ -275,3 +275,20 @@
     border: 1px solid #fff;
 }
 
+/* Gif de Careegamento */
+
+#loading{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: #fff;
+	background-size: 200px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('imagens/Pacman.gif');
+}
+

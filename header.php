@@ -52,3 +52,6 @@
 
 <!-- Botão de voltar ao topo -->
 <div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+<!-- Gif de carregamento -->
+<div id="loading"></div>

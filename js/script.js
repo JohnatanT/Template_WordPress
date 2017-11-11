@@ -12,3 +12,12 @@ $(window).scroll(function(){
             $('#top').fadeOut();
         }
 });
+
+//Gif de carregamento
+$(document).ready(function(){
+    //Esconde preloader
+    $(window).load(function(){
+        $('#loading').fadeOut(1500);//1500 é a duração do efeito (1.5 seg)
+    });
+
+});
