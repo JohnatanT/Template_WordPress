@@ -2,8 +2,8 @@
 		<div class="rodape">
 			<div class="col-md-4 col-sm-4">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Sobre Nós</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="sobre.php">Sobre</a></li>
 					<li><a href="">Novidades</a></li>
 					<li><a href="">Galeria</a></li>
 					<li><a href="">Contato</a></li>
@@ -44,5 +44,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/1c8c88a612.js"></script>
   </body>
 </html>

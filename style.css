@@ -18,11 +18,11 @@
 	color:  #fff;
 }
 #navbar ul li:hover{
-	background-color: #8c3c71;
+	background-color: #0a304c;
 }
 
 .navbar-default .navbar-header a:hover{
-	color: #8c3c71;
+	color: #0a304c;
 }
 .navbar-default .navbar-toggle{
 	border-color: #000;
@@ -42,7 +42,7 @@
 }
 /* Home */
 .navegacao{
-	background-image: url('imagens/marquee-bg-ai-1440x1090.jpg');
+	background-color: #1f2946;
 }
 
 .bloco-sobre {
@@ -56,7 +56,7 @@
     margin-bottom: 20px;
 }
 .bloco-sobre .linha-sobre h2,.bloco-sobre .linha-sobre a{
-	color: #0b96fb;
+	color: #fff;
 	font-weight: bold;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .ultimos-posts .linha-posts .bloco-posts a{
-	color: #632d9f;
+	color: #0a304c;
 	text-decoration: none;
 }
 
@@ -175,4 +175,48 @@
 	.footer{
 		text-align: center;
 	}
+}
+
+
+/* Sobre */
+.info-sobre{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.info-sobre .sobre-nos .centralizado{
+	text-align: center;
+    margin: 0 auto;
+}
+.info-sobre .sobre-nos .centralizado .cabecalho{
+	font-size: 45px;
+	color: #0a439a;
+}
+
+.info{
+	background: url('imagens/bg-clientes.jpg');
+	background-attachment: fixed;
+	color: #fff;
+}
+
+.info .titulo-info{
+	width: 70%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 81px;
+    margin-bottom: 55px;
+}
+.info .titulo-info h2{
+	text-align: center;
+	font-size: 60px;
+
+}
+
+
+.info .conteudo{
+	width: 50%;
+    padding-bottom: 95px;
+    text-align: center;
+    margin: 0 auto;
 }

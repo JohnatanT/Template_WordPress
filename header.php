@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Description of the page less than 150 characters">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Blog</title>
 
@@ -37,8 +38,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="sobre.php">Sobre</a></li>
         <li><a href="#">Novidades</a></li>
         <li><a href="#">Galeria</a></li>
         <li><a href="#">Contato</a></li>
