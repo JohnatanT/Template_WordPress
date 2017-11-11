@@ -4,7 +4,7 @@
 <div class="row">
 	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
 		<div class="item active">
-			<img src="imagens/banner.png" class="img-responsive wp-post-image" alt="Banner">
+			<img src="imagens/home.jpg" class="img-responsive wp-post-image" alt="Banner">
 		</div>
 	</div>
 </div>
@@ -30,7 +30,7 @@
 				<div class="col-md-6">
 					<h2>Olhe Nossos últimos Posts</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="" class="btn btn-purple">Acessar</a>
+					<a href="novidades.php" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -57,6 +57,15 @@
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+
+
+<!-- Mensagem -->
+<div class="row mensagem">
+	<div class="texto">
+		<h2>Ninguém é igual a ninguém. Todo o ser humano é um estranho ímpar.</h2>
+		<p>Carlos Drummond de Andrade</p>
 	</div>
 </div>
 
@@ -106,12 +115,5 @@
 	</div>
 </div>
 
-<!-- Mensagem -->
-<div class="row mensagem">
-	<div class="texto">
-		<h2>Ninguém é igual a ninguém. Todo o ser humano é um estranho ímpar.</h2>
-		<p>Carlos Drummond de Andrade</p>
-	</div>
-</div>
 
 <?php require_once 'footer.php' ?>

@@ -4,7 +4,7 @@
 	margin: 0;
 }
 .navbar-default{
-	border: none;
+	border-bottom: 2px solid #000;
 }
 .navbar-default .container-fluid{
 	padding-right: 0;
@@ -17,6 +17,7 @@
 #navbar ul li a:hover{
 	color:  #fff;
 }
+
 #navbar ul li:hover{
 	background-color: #0a304c;
 }
@@ -42,13 +43,13 @@
 }
 /* Home */
 .navegacao{
-	background-color: #1f2946;
+	margin-top: 50px;
 }
 
 .bloco-sobre {
 	width: 80%;
     margin: 40px auto;
-    color: #fff;
+    color: #000;
 }
 
 .bloco-sobre .linha-sobre{
@@ -56,7 +57,7 @@
     margin-bottom: 20px;
 }
 .bloco-sobre .linha-sobre h2,.bloco-sobre .linha-sobre a{
-	color: #fff;
+	color: #2d3d69;
 	font-weight: bold;
 }
 
@@ -93,6 +94,7 @@
 
 .ultimos-posts{
 	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .ultimos-posts .linha-posts{
 	margin: 0 auto;
@@ -105,6 +107,7 @@
 
 .ultimos-posts .linha-posts .bloco-posts .texto h4{
 	font-weight: bold;
+	color: #1c436b;
 }
 
 .ultimos-posts .linha-posts .bloco-posts a{
@@ -206,6 +209,7 @@
     font-weight: bold;
     margin-top: 81px;
     margin-bottom: 55px;
+    text-align: center;
 }
 .info .titulo-info h2{
 	text-align: center;
@@ -213,10 +217,61 @@
 
 }
 
-
 .info .conteudo{
 	width: 50%;
     padding-bottom: 95px;
     text-align: center;
     margin: 0 auto;
 }
+
+/* Novidades */
+
+.posts .bloco-posts{
+	margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+}
+
+.posts .bloco-posts img{
+	margin: 0 auto;
+}
+
+.posts .bloco-posts .resumo{
+	width: 80%;
+}
+
+.posts .bloco-posts .resumo a{
+	text-decoration: none;
+	color: #0a304c;
+}
+
+.posts .bloco-posts .resumo h2{
+	color: #0a304c;
+	text-transform: uppercase;
+}
+
+@media(max-width: 767px){
+	.posts .bloco-posts img{
+		margin: 0;
+	}
+	.posts .bloco-posts{
+		height: auto;
+	}
+}
+
+/* Botão de voltar ao topo */
+#top{
+    position: fixed;
+    right: 20px;
+    display: none;
+    font-size: 30px;
+    background-color: #0a304c;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    bottom: 20px;
+    z-index: 999;
+    border: 1px solid #fff;
+}
+

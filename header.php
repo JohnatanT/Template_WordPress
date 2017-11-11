@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Description of the page less than 150 characters">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Blog</title>
+    <title>Marketing</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Feeling of the World</a>
+      <a class="navbar-brand" href="index.php">Marketing</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +40,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php">Home</a></li>
         <li><a href="sobre.php">Sobre</a></li>
-        <li><a href="#">Novidades</a></li>
+        <li><a href="novidades.php">Novidades</a></li>
         <li><a href="#">Galeria</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
@@ -48,3 +48,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<!-- Botão de voltar ao topo -->
+<div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
