@@ -1,6 +1,6 @@
 	<div class="row footer">
 		<div class="rodape">
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<ul>
 					<li><a href="">Home</a></li>
 					<li><a href="">Sobre Nós</a></li>
@@ -9,15 +9,16 @@
 					<li><a href="">Contato</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				<ul>
+					<li><a href="">Ultimo</a></li>
 					<li><a href="">Ultimo</a></li>
 					<li><a href="">Ultimo</a></li>
 					<li><a href="">Ultimo</a></li>
 					<li><a href="">Ultimo</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4">
 				 <!-- SDK Facebbok -->
     			<div id="fb-root"></div>
 				<script>(function(d, s, id) {

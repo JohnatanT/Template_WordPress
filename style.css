@@ -24,6 +24,22 @@
 .navbar-default .navbar-header a:hover{
 	color: #8c3c71;
 }
+.navbar-default .navbar-toggle{
+	border-color: #000;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+@media(max-width: 767px){
+	#navbar ul{
+		text-align: center;
+	}
+}
 /* Home */
 .navegacao{
 	background-image: url('imagens/marquee-bg-ai-1440x1090.jpg');
@@ -136,4 +152,27 @@
     background-color: #000;
     padding: 10px;
     color: #fff;
+}
+
+@media(max-width: 991px){
+	.bloco-sobre{
+		width: 60%;
+	}
+	.bloco-sobre .linha-sobre .col-md-6{
+		margin-bottom: 25px;
+	}
+	.ultimos-posts .linha-posts{
+		width: 70%;
+	}
+	.ultimos-posts .linha-posts .bloco-posts{
+		padding: 7px 10px;
+    	margin: 25px;
+    	border-bottom: 1px solid;
+	}
+}
+
+@media(max-width: 767px){
+	.footer{
+		text-align: center;
+	}
 }
