@@ -292,3 +292,22 @@
 	background-image: url('imagens/Pacman.gif');
 }
 
+/* Galeria */
+.galeria{
+	margin-bottom: 80px;
+}
+.fotos .bloco-fotos img{
+	margin: 0 auto;
+}
+.fotos .bloco-fotos{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.fotos .titulo h2{
+	text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #232e65;
+}

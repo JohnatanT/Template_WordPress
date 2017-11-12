@@ -6,7 +6,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="sobre.php">Sobre</a></li>
 					<li><a href="novidades.php">Novidades</a></li>
-					<li><a href="">Galeria</a></li>
+					<li><a href="galeria.php">Galeria</a></li>
 					<li><a href="">Contato</a></li>
 				</ul>
 			</div>

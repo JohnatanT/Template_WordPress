@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Description of the page less than 150 characters">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Marketing</title>
+    <title>Publicidade</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Marketing</a>
+      <a class="navbar-brand" href="index.php">Publicidade</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +41,7 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="sobre.php">Sobre</a></li>
         <li><a href="novidades.php">Novidades</a></li>
-        <li><a href="#">Galeria</a></li>
+        <li><a href="galeria.php">Galeria</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
      

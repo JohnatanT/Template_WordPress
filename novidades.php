@@ -4,7 +4,7 @@
 <div class="row">
 	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
 		<div class="item active">
-			<img src="imagens/marketing.png" class="img-responsive wp-post-image" alt="Banner">
+			<img src="imagens/posts.png" class="img-responsive wp-post-image" alt="Banner">
 		</div>
 	</div>
 </div>
