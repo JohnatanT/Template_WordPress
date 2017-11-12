@@ -1,115 +1,52 @@
-<?php require_once 'header.php' ?>
+<?php 
+/* Template Name: Novidades */
+get_header(); ?>
 
 <!-- Banner --> 
 <div class="row">
-	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
-		<div class="item active">
-			<img src="imagens/posts.png" class="img-responsive wp-post-image" alt="Banner">
-		</div>
-	</div>
+	<?php
+		if(have_posts()){
+			while(have_posts()) {
+				the_post();
+				$attr = array('class' => 'img-responsive','alt' => get_the_title());
+				the_post_thumbnail("full",$attr); 
+			}
+		}
+		wp_reset_postdata();
+	?>
 </div>
 
 <!-- Posts -->
 <div class="row">
 	<div class="posts">
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
-		<div class="bloco-posts">
-			<div class="col-md-4 col-sm-4">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-			</div>
-			<div class="col-md-8 col-sm-8">
-				<div class="resumo">
-					<h2>Titulo do Posts</h2>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação,É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</p>
-					<a href="">Leia Mais</a>
-				</div>
-			</div>
-		</div>
+		<?php
+			$loop = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'showposts' => 8));
+			if($loop->have_posts()){
+				while($loop->have_posts()){
+					$loop->the_post();
+		?>
+					<div class="bloco-posts">
+						<div class="col-md-4 col-sm-4">
+							<?php
+								$attr = array('class' => 'img-responsive','alt' => get_the_title());
+								the_post_thumbnail("medium",$attr); 
+							?>
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<div class="resumo">
+								<h2><?php the_title(); ?></h2>
+								<?php the_excerpt();  ?>
+								<a href="<?php the_permalink(); ?>">Leia Mais</a>
+							</div>
+						</div>
+					</div>
+		<?php
+				}
+			}
+			wp_reset_postdata();
+		?>
 	</div>
 </div>
 
 
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

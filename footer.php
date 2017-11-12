@@ -2,22 +2,41 @@
 	<div class="row footer">
 		<div class="rodape">
 			<div class="col-md-4 col-sm-4">
-				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="sobre.php">Sobre</a></li>
-					<li><a href="novidades.php">Novidades</a></li>
-					<li><a href="galeria.php">Galeria</a></li>
-					<li><a href="contato.php">Contato</a></li>
-				</ul>
+				<?php 
+			      $args = array(
+			        'theme_location' => 'menu-footer',
+			        'menu' => 'menu-footer',
+			        'container' => '',
+			        'container_class' => '',
+			        'container_id' => '',
+			        'menu_class' => '',
+			        'menu_id' => '',
+			        'echo' => true,
+			        'before' => '',
+			        'after' => '',
+			        'link_before' => '',
+			        'link_after' => '',
+			        'depth' => 0,
+			        'walker' => ''
+			      );
+			      wp_nav_menu($args);
+			    ?>
 			</div>
 			<div class="col-md-4 col-sm-4">
+				<?php
+			$loop = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'showposts' => 5));
+			if($loop->have_posts()){
+				while($loop->have_posts()){
+					$loop->the_post();
+			?>
 				<ul>
-					<li><a href="">Ultimo</a></li>
-					<li><a href="">Ultimo</a></li>
-					<li><a href="">Ultimo</a></li>
-					<li><a href="">Ultimo</a></li>
-					<li><a href="">Ultimo</a></li>
+					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				</ul>
+
+				<?php  
+			}
+		}
+				?>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				 <!-- SDK Facebbok -->
@@ -45,8 +64,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     <script src="https://use.fontawesome.com/1c8c88a612.js"></script>
   </body>
 </html>

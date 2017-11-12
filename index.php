@@ -1,12 +1,18 @@
-<?php require_once 'header.php' ?>
+<?php /* Template Name: Home */ ?>
+<?php get_header(); ?>
   
  <!-- Banner --> 
 <div class="row">
-	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
-		<div class="item active">
-			<img src="imagens/home.jpg" class="img-responsive wp-post-image" alt="Banner">
-		</div>
-	</div>
+	<?php
+		if(have_posts()){
+			while(have_posts()) {
+				the_post();
+				$attr = array('class' => 'img-responsive','alt' => get_the_title());
+				the_post_thumbnail("full",$attr); 
+			}
+		}
+		wp_reset_postdata();
+	?>
 </div>
 
 <!-- Bloco Navegação -->
@@ -15,7 +21,7 @@
 		<div class="row linha-sobre">
 			<div class="col-md-6">
 				<div class="col-md-6">
-					<img src="imagens/icons8-Weixing-128.png" class="img-responsive">
+					<img src="<?php bloginfo('template_url'); ?>/imagens/icons8-Weixing-128.png" class="img-responsive">
 				</div>
 				<div class="col-md-6">
 					<h2>Conheça Mais Sobre Nós</h2>
@@ -25,7 +31,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="col-md-6">
-					<img src="imagens/icons8-WordPress-128.png" class="img-responsive">
+					<img src="<?php bloginfo('template_url'); ?>/imagens/icons8-WordPress-128.png" class="img-responsive">
 				</div>
 				<div class="col-md-6">
 					<h2>Olhe Nossos últimos Posts</h2>
@@ -37,7 +43,7 @@
 		<div class="row linha-sobre">
 			<div class="col-md-6">
 				<div class="col-md-6">
-					<img src="imagens/icons8-Google Photos-128.png
+					<img src="<?php bloginfo('template_url'); ?>/imagens/icons8-Google Photos-128.png
 					" class="img-responsive">
 				</div>
 				<div class="col-md-6">
@@ -48,7 +54,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="col-md-6">
-					<img src="imagens/icons8-Telefone-128.png" class="img-responsive">
+					<img src="<?php bloginfo('template_url'); ?>/imagens/icons8-Telefone-128.png" class="img-responsive">
 				</div>
 				<div class="col-md-6">
 					<h2>Entre em Contato</h2>
@@ -72,48 +78,32 @@
 <!-- Ultimos Posts -->
 <div class="row ultimos-posts">
 	<div class="linha-posts">
+		<?php
+			$loop = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'showposts' => 4));
+			if($loop->have_posts()){
+				while($loop->have_posts()){
+					$loop->the_post();
+					?>
 		<div class="col-md-3">
 			<div class="bloco-posts">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
+				<?php
+					$attr = array('class' => 'img-responsive','alt' => get_the_title());
+					the_post_thumbnail("medium",$attr); 
+				?>
 				<div class="texto">
-					<h4>Lorem Ipsum</h4>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
+					<h4><?php the_title(); ?></h4>
+					<p><?php the_excerpt(); ?></p>
 				</div>
-				<a href="">Leia Mais.</a>
+				<a href="<?php the_permalink(); ?>">Leia Mais.</a>
 			</div>
 		</div>
-		<div class="col-md-3">
-			<div class="bloco-posts">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-				<div class="texto">
-					<h4>Lorem Ipsum</h4>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-				</div>
-				<a href="">Leia Mais.</a>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="bloco-posts">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-				<div class="texto">
-					<h4>Lorem Ipsum</h4>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-				</div>
-				<a href="">Leia Mais.</a>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="bloco-posts">
-				<img src="imagens/ultimos-posts.png" class="img-responsive">
-				<div class="texto">
-					<h4>Lorem Ipsum</h4>
-					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-				</div>
-				<a href="">Leia Mais.</a>
-			</div>
-		</div>
+		
+	<?php 
+	}
+}
+	?>
 	</div>
 </div>
 
 
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

@@ -1,12 +1,19 @@
-<?php require_once 'header.php' ?>
+<?php
+/* Template Name: Galeria */
+ get_header(); ?>
 
  <!-- Banner --> 
 <div class="row">
-	<div id="slide-banner" class="carousel-iner" data-ride="carousel">
-		<div class="item active">
-			<img src="imagens/galeria.jpg" class="img-responsive wp-post-image" alt="Banner">
-		</div>
-	</div>
+	<?php
+		if(have_posts()){
+			while(have_posts()) {
+				the_post();
+				$attr = array('class' => 'img-responsive','alt' => get_the_title());
+				the_post_thumbnail("full",$attr); 
+			}
+		}
+		wp_reset_postdata();
+	?>
 </div>
 
 <!-- Galeria de Fotos -->
@@ -94,4 +101,4 @@
 </div>
 
 
-<?php require_once 'footer.php' ?>
+<?php get_footer(); ?>

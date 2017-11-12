@@ -9,8 +9,8 @@
     <title>Publicidade</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,16 +36,25 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="sobre.php">Sobre</a></li>
-        <li><a href="novidades.php">Novidades</a></li>
-        <li><a href="galeria.php">Galeria</a></li>
-        <li><a href="contato.php">Contato</a></li>
-      </ul>
-     
-    </div><!-- /.navbar-collapse -->
+    <?php 
+      $args = array(
+        'theme_location' => 'menu-principal',
+        'menu' => 'menu-principal',
+        'container' => 'div',
+        'container_class' => 'collapse navbar-collapse',
+        'container_id' => 'navbar',
+        'menu_class' => 'nav navbar-nav navbar-right',
+        'menu_id' => '',
+        'echo' => true,
+        'before' => '',
+        'after' => '',
+        'link_before' => '',
+        'link_after' => '',
+        'depth' => 0,
+        'walker' => ''
+      );
+      wp_nav_menu($args);
+    ?>
   </div><!-- /.container-fluid -->
 </nav>
 
