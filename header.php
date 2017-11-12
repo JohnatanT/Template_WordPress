@@ -42,7 +42,7 @@
         <li><a href="sobre.php">Sobre</a></li>
         <li><a href="novidades.php">Novidades</a></li>
         <li><a href="galeria.php">Galeria</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="contato.php">Contato</a></li>
       </ul>
      
     </div><!-- /.navbar-collapse -->

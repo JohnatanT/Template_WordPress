@@ -53,7 +53,7 @@
 				<div class="col-md-6">
 					<h2>Entre em Contato</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="" class="btn btn-purple">Acessar</a>
+					<a href="contato.php" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 		</div>
