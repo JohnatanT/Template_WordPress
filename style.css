@@ -355,3 +355,15 @@
 .contato .form .form-horizontal input:-ms-input-placeholder,.contato .form .form-horizontal textarea:-ms-input-placeholder{
 	color: #fff;
 }
+
+
+/* Conteudo do Post */
+#conteudo-post .conteudo{
+	margin: 80px auto;
+	width: 80%;
+}
+#conteudo-post .conteudo h2{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #0a304c;
+}

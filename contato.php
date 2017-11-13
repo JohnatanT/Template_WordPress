@@ -27,12 +27,12 @@
 			      <input type="email" required="required" class="form-control" name="email" id="email" placeholder="Digite seu Email">
 			    </div>
 			    <div class="col-md-12">
-			      <input type="email" required="required" class="form-control" name="assunto" id="assunto" placeholder="Enter email">
+			      <input type="email" required="required" class="form-control" name="assunto" id="assunto" placeholder="Assunto">
 			    </div>
 				<div class="col-md-12">
 			  		<textarea class="form-control" required="required" rows="12" maxlength="1000" name="mensagem" placeholder="Mensagem"></textarea>
 			  	</div>
-			  <button type="submit">Submit</button>
+			  <button type="submit">Enviar</button>
 			</form>
 		</div>
 	</div>

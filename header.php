@@ -32,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Publicidade</a>
+      <a class="navbar-brand" href="">Publicidade</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
