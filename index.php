@@ -1,4 +1,4 @@
-<?php /* Template Name: Home */ ?>
+
 <?php get_header(); ?>
   
  <!-- Banner --> 
@@ -26,7 +26,10 @@
 				<div class="col-md-6">
 					<h2>Conheça Mais Sobre Nós</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="sobre.php" class="btn btn-purple">Acessar</a>
+					<?php
+						$id = get_post(23);
+					?>
+					<a href="<?php the_permalink($id); ?>" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -36,7 +39,10 @@
 				<div class="col-md-6">
 					<h2>Olhe Nossos últimos Posts</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="novidades.php" class="btn btn-purple">Acessar</a>
+					<?php
+						$id = get_post(25);
+					?>
+					<a href="<?php the_permalink($id); ?>" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -49,7 +55,10 @@
 				<div class="col-md-6">
 					<h2>Veja Nossa Galeria</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="galeria.php" class="btn btn-purple">Acessar</a>
+					<?php
+						$id = get_post(28);
+					?>
+					<a href="<?php the_permalink($id); ?>" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -59,7 +68,10 @@
 				<div class="col-md-6">
 					<h2>Entre em Contato</h2>
 					<p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação</p>
-					<a href="contato.php" class="btn btn-purple">Acessar</a>
+					<?php
+						$id = get_post(31);
+					?>
+					<a href="<?php the_permalink($id); ?>" class="btn btn-purple">Acessar</a>
 				</div>
 			</div>
 		</div>

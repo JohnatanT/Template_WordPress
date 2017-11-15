@@ -55,22 +55,16 @@
 
 <!-- Mais sobre a empresa -->
 <div class="row info">
-	<div class="titulo-info">
-		<h2><i class="fa fa-coffee" aria-hidden="true"></i></h2>
-		Buscamos relacionamentos baseados na transparência, persistência, confiança mútua e integridade com nossos colaboradores, clientes e outros parceiros de negócios.
-	</div>
-	<div class="centro">
-		<div>
-		<div class="conteudo">
-				Vendemos resultados e somos pagos pelos resultados que geramos. Não vai ser da noite para o dia que alavancaremos seu negócio na internet, faremos isso um passo de cada vez, obtendo resultados contínuos e graduais; de mãos dadas com nossos clientes.
-		</div>
-	</div>
-	<div>
-		<div class="conteudo">
-				Oferecemos diversos serviços de Marketing Digital para empresas que precisam divulgar seus produtos e serviços através de remarketing, Google Adwords, Facebook Ads, estratégias de SEO e outras estratégias de Marketing Digital que irão destacar sua marca e trazer notoriedade para sua empresa no mundo online.
-		</div>
-	</div>
-	</div>
+	<?php 
+		if(have_posts()){
+			while(have_posts()){
+				the_post();
+
+				the_content();
+			}
+		}
+		wp_reset_postdata();
+	?>
 </div>
 
 
